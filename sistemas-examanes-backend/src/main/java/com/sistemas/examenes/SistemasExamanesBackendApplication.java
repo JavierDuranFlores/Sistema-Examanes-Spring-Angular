@@ -17,7 +17,6 @@ import java.util.Set;
 public class SistemasExamanesBackendApplication implements CommandLineRunner {
 
 	@Autowired
-	@Qualifier("usuarioService")
 	private UsuarioService usuarioService;
 
 	public static void main(String[] args) {
@@ -27,7 +26,7 @@ public class SistemasExamanesBackendApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Usuario usuario = new Usuario();
+		/*Usuario usuario = new Usuario();
 		usuario.setNombre("Javier");
 		usuario.setApellido("Duran");
 		usuario.setUsername("javier");
@@ -48,7 +47,7 @@ public class SistemasExamanesBackendApplication implements CommandLineRunner {
 		usuarioRoles.add(usuarioRol);
 
 		Usuario usuarioGuardado = usuarioService.guardarUsuario(usuario, usuarioRoles);
-		System.out.println(usuarioGuardado.getUsername());
+		System.out.println(usuarioGuardado.getUsername());*/
 
 	}
 }

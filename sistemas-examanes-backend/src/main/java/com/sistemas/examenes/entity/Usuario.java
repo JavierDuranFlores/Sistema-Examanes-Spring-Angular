@@ -1,5 +1,6 @@
 package com.sistemas.examenes.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -46,6 +47,7 @@ public class Usuario {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "usuario")
     @Getter @Setter
+    @JsonIgnore
     private Set<UsuarioRol> usuarioRoles = new HashSet<>();
 
 }
